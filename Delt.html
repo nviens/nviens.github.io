@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nate Viens</title>
+<style>
+body {
+    background-image: url("rise.jpg"); 
+	background-repeat: no-repeat;
+	background-position: Top center;
+	background-size: 2000px 500px;
+	background-color: #ffff99;
+	border-left: 10px solid #cc99ff;
+    padding-left: 20px;
+	
+    padding-bottom: 20px;
+}
+h1 {
+	text-align: center;
+    font-family: garamond;
+	padding-top: 450px;
+}
+p { 
+	font-family: verdana;
+    font-size: 16px
+}
+h3 {
+	font-family: verdana;
+    font-size: 16px;
+}
+ul {
+	list-style-type: none;
+	position: top left;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background color: #cccccc;
+}
+ul.a {
+	float: right;
+}
+ol {
+    list-style-type: upper-roman;
+	float: left;
+}
+li {
+	float: left;
+	border-right: 2px solid white;
+	background-color: #cccccc;
+}
+.list {
+	float: left;
+	background-color: white;
+}
+li a, .dropbtn {
+	display: inline-block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(.active), .dropdown:hover .dropbtn  {
+	background-color: #cc99ff;
+}
+.active {
+	background-color: #cc99ff;
+}	
+button {
+	float: right;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cccccc;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: green}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+iframe {
+	clear: center;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 45%;
+}
+
+td, th {
+    border: 1px solid #cc99ff;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #cc99ff;
+}
+tr:nth-child(odd) {
+    background-color: #cc99ff;
+}
+</style>
+<ul>
+	<li><a href="home.html">Home</a></li>
+	<li><a href="blog.html">My Family</a></li>
+	<li><a href="future.html">The Future</a></li>
+	<li><a href="dnd.html">D&D</a></li>
+	<li><a class="active" href="Delt.html">ΔΤΔ</a></li>
+	<li class="dropdown"> <a href="javascript:void(0)" class="dropbtn">Contact</a>
+    <div class="dropdown-content">
+      <a href=https://www.linkedin.com/in/nathaniel-viens>LinkedIn</a>
+      <address><a href="mailto:nathaniel.viens@maine.edu">nathaniel.viens@maine.edu</a></address>
+      <a href="tel:207-462-6283">(207)462-6283</a>
+    </div>
+  </li>
+</ul>
+</head>
+
+<body>
+
+
+<br>
+	<button onclick="myFunction()">Change Contrast back</button>
+	<button onclick="contrastFunction()">Change Contrast</button>
+	
+<h1 id="heading1"> Delta Tau Delta<br>Gamma Nu</h1>
+
+<p id="paragraph1">I joined Delta Tau Delta in the fall of 2013. Through Delt, I have been able to travel across the country, and attend conferences. In 2015, I was invited to come to the National Headquarters for Delta
+Tau Delta to help create the Director of Member Development position. Last year (2016) I was invited to attend The Charge, a leadership conference in Chicago. We focused on personal development the most, and also giving
+back to the community.  </p>
+
+
+
+<p id="paragraph3">This semester, I am raising money for the Children's Miracle Network. The University of Maine hosts the Dance Marathon that benefits the EMMC NICU. 
+<br> Any donation is extremely beneficial, and is tax deductible.<br><iframe src="http://events.dancemarathon.com/index.cfm?fuseaction=widgets.200x420thermo&participantID=278991" size="200%"width="202" height="422" align="middle" frameborder="0" 
+scrolling="no"><a href="http://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.participant&participantID=278991">Make a Donation!</a></iframe><img src="Delt group.jpg" height="450px" width="700px" style="float:right;"></p>
+<br><br>
+<p id="paragraph2"><b>Positions:</b>
+<table id="list">
+  <tr>
+    <th>Position</th>
+    <th>Level</th>
+    <th>Year</th>
+  </tr>
+  <tr>
+    <td>Road Chair</td>
+    <td>Administrative Board</td>
+    <td>2014</td>
+  </tr>
+  <tr>
+    <td>Director of Member Development</td>
+    <td>Executive Board</td>
+    <td>2015</td>
+  </tr>
+  <tr>
+    <td>New Member Educator</td>
+    <td>Administrative Board</td>
+    <td>2017</td>
+  </tr>
+<br><br><br>
+</p>
+
+<h3 id="heading2"></h4>
+
+<script>
+function contrastFunction() {
+    var x = document.getElementById("paragraph1");
+    var y = document.getElementById("heading1");
+    var z = document.getElementById("paragraph2");
+    var a = document.getElementById("paragraph3");
+    var b = document.getElementById("heading2");
+	var c = document.getElementById("list");
+    x.style.fontSize = "25px"; 
+    x.style.color = "white"; 
+    y.style.fontSize = "50px";
+    y.style.color = "white";
+    z.style.fontSize = "25px"; 
+    z.style.color = "white"; 
+    a.style.fontSize = "25px"; 
+    a.style.color = "white";
+    b.style.fontSize = "25px"; 
+    b.style.color = "white";
+	c.style.fontSize = "25px";
+    document.body.style.backgroundColor = "black";
+}
+function myFunction() {
+    var a = document.getElementById("paragraph1");
+    var b = document.getElementById("heading1");
+    var c = document.getElementById("paragraph2");
+    var d = document.getElementById("paragraph3");
+    var e = document.getElementById("heading2");
+	var f = document.getElementById("list");
+    a.style.fontSize = "16px"; 
+    a.style.color = "black"; 
+    b.style.fontSize = "32px";
+    b.style.color = "black";
+    c.style.fontSize = "16px"; 
+    c.style.color = "black"; 
+    d.style.fontSize = "16px"; 
+    d.style.color = "black";
+    e.style.fontSize = "16px"; 
+    e.style.color = "black";
+	f.style.fontSize = "16px:";
+    document.body.style.backgroundColor = "#ffff99";
+}
+</script>
+
+
+</body>
+</html>

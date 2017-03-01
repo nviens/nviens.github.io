@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Haley & I</title>
+<style>
+body {
+	background-color: lightBlue;
+	border-left: 10px solid Darkblue;
+    padding-left: 20px;
+	padding-right: 30px;
+    padding-bottom: 20px;
+	margin right: 20px;
+}
+h1 {
+	text-align: center;
+    font-family: garamond;
+	float: center;
+}
+p { 
+	font-family: verdana;
+    font-size: 16px
+}
+h3 {
+	font-family: verdana;
+    font-size: 16px;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background color: darkgrey;
+}
+ul.a {
+	float: right;
+}
+li {
+	float: left;
+	border-right: 2px solid white;
+	background-color: grey;
+}
+li a, .dropbtn {
+	display: inline-block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(.active), .dropdown:hover .dropbtn  {
+	background-color: dodgerBlue;
+}
+.active {
+	background-color: dodgerBlue;
+}	
+button {
+	float: right;
+}
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: green}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+<ul>
+	<li><a href="home.html">Home</a></li>
+	<li><a href="blog.html">My Family</a></li>
+	<li><a class="active" href="future.html">The Future</a></li>
+	<li><a href="dnd.html">D&D</a></li>
+	<li><a href="Delt.html">ΔΤΔ</a></li>
+	<li class="dropdown"> <a href="javascript:void(0)" class="dropbtn">Contact</a>
+    <div class="dropdown-content">
+      <a href=https://www.linkedin.com/in/nathaniel-viens>LinkedIn</a>
+      <address><a href="mailto:nathaniel.viens@maine.edu">nathaniel.viens@maine.edu</a></address>
+      <a href="tel:207-462-6283">(207)462-6283</a>
+    </div>
+  </li>
+</ul>
+	<button onclick="myFunction()">Change Contrast back</button>
+	<button onclick="contrastFunction()">Change Contrast</button>
+	
+<br><br>
+<h1 id="heading1">Our Story</h1>
+
+<p id="paragraph1"></p>
+<div class="responsive">
+
+  <div class="img">
+    <a target="_blank" href="us1.jpg">
+      <img src="us1.jpg" alt="Haley & I" width="300" height="200">
+    </a>
+    <div class="desc">Haley & I will have been together for three years this March 1st!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="us2.jpg">
+      <img src="us2.jpg" alt="img" width="600" height="400">
+    </a>
+    <div class="desc">Haley will be going to Grad school for her Masters of Social Work.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="us3.jpg">
+      <img src="us3.jpg" alt="img" width="600" height="400">
+    </a>
+    <div class="desc">Wether we will be in South Carolina or Maine, we will be together!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="Haley.jpg">
+      <img src="Haley.jpg" alt="Blue Hill" width="600" height="400">
+    </a>
+    <div class="desc">Sitting at the East Blue Hill Library so we can get wifi.</div>
+  </div>
+</div>
+<div class="clearfix"></div>
+
+
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="graduating.jpg">
+      <img src="graduating.jpg" alt="Graduation" width="600" height="400">
+    </a>
+    <div class="desc">Haley is the first of her family to earn a degree!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="MS Walk.jpg">
+      <img src="MS Walk.jpg" alt="MS Walk 2016" width="600" height="400">
+    </a>
+    <div class="desc">We had a great time volunteering last year for the MS Walk</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="myrtle beach.jpg">
+      <img src="myrtle beach.jpg" alt="Myrtle Beach" width="600" height="400">
+    </a>
+    <div class="desc">The view from our suite in Myrtle Beach!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="New years.jpg">
+      <img src="New years.jpg" alt="New Years" width="600" height="400">
+    </a>
+    <div class="desc">Someone doesn't like hats!</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="snuggles.jpg">
+      <img src="snuggles.jpg" alt="Snuggles" width="600" height="400">
+    </a>
+    <div class="desc">We love having our fur-child</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="Haley png.png">
+      <img src="Haley png.png" alt="Fishy faces" width="600" height="400">
+    </a>
+    <div class="desc">Being a goofball</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="Birthday.jpg">
+      <img src="Birthday.jpg" alt="Birthday" width="600" height="400">
+    </a>
+    <div class="desc">On our way to Portland for Haley's Birthday!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="4wheeling.jpg">
+      <img src="4wheeling.jpg" alt="Fourwheeling" width="600" height="400">
+    </a>
+    <div class="desc">My first time fourwheeling</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+<br>
+
+<p id="paragraph3"></p>
+<br>
+<h3 id="heading2">We are hoping to move to Columbia, South Carolina, where Haley will attend USC, and I will start
+my career. This map shows places that will make living there very exciting! Feel free to check it out!</h3>
+<p id="paragraph2"><iframe src="https://www.google.com/maps/d/embed?mid=12Bh2cZr6Cpos8zC2vrFzpYnY49w" width="640" height="480"></iframe></p>
+
+
+<script>
+function contrastFunction() {
+    var x = document.getElementById("paragraph1");
+    var y = document.getElementById("heading1");
+    var z = document.getElementById("paragraph2");
+    var a = document.getElementById("paragraph3");
+    var b = document.getElementById("heading2");
+    x.style.fontSize = "25px"; 
+    x.style.color = "white"; 
+    y.style.fontSize = "50px";
+    y.style.color = "white";
+    z.style.fontSize = "25px"; 
+    z.style.color = "white"; 
+    a.style.fontSize = "25px"; 
+    a.style.color = "white";
+    b.style.fontSize = "25px"; 
+    b.style.color = "white";
+    document.body.style.backgroundColor = "black";
+}
+function myFunction() {
+    var a = document.getElementById("paragraph1");
+    var b = document.getElementById("heading1");
+    var c = document.getElementById("paragraph2");
+    var d = document.getElementById("paragraph3");
+    var e = document.getElementById("heading2");
+    a.style.fontSize = "16px"; 
+    a.style.color = "black"; 
+    b.style.fontSize = "32px";
+    b.style.color = "black";
+    c.style.fontSize = "16px"; 
+    c.style.color = "black"; 
+    d.style.fontSize = "16px"; 
+    d.style.color = "black";
+    e.style.fontSize = "16px"; 
+    e.style.color = "black";
+    document.body.style.backgroundColor = "lightBlue";
+}
+</script>
+
+
+</body>
+</html>

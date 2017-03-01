@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Knotring Blight</title>
+<style>
+body {
+    background-image: url("divine spells.jpeg");
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: 500px 300px;
+	border-left: 10px solid Darkblue;
+    padding-left: 20px;
+	padding-right: 500px;
+    padding-bottom: 20px;
+}
+h1 {
+	text-align: center;
+    font-family: garamond;
+}
+p { 
+	font-family: verdana;
+    font-size: 16px
+}
+h3 {
+	font-family: verdana;
+    font-size: 16px;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background color: darkgrey;
+}
+ul.a {
+	float: right;
+}
+li {
+	float: left;
+	border-right: 2px solid white;
+	background-color: grey;
+}
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(.active) {
+	background-color: green;
+}
+.active {
+	background-color: green;
+}	
+button {
+	float: right;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<ul>
+	<li><a href="home.html">Home</a></li>
+	<li><a href="https://character-sheet-dnd5.appspot.com/#fileIds=0B4k_M5J9ZTTlbGNaZ29GeWVqVFU&userId=103057504144279462849">Character Sheet</a></li>
+	<li><a class="active" href="Spell list">Spell List</a></li>
+	<li><a href="#Blog">Blog</a></li>
+	<li><a href="contact.html">Contact</a></li>
+</ul>
+<br>
+	<button onclick="myFunction()">Change Contrast back</button>
+	<button onclick="contrastFunction()">Change Contrast</button>
+	
+<h1>Cantrips</h1>
+<table>
+  <tr>
+    <th>Spell Name</th>
+    <th>Description</th>
+    <th>School</th>
+  </tr>
+  <tr>
+    <td>Light</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Guidance</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Mending</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Resistance</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Sacred Flame</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Thaumaumartgy</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+<h1>1st Level Cleric Spells</h1>
+<table>
+  <tr>
+    <th>Spell Name</th>
+    <th>Description</th>
+    <th>School</th>
+  </tr>
+  <tr>
+    <td>Bane</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Bless</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Create or Destroy Water</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Cure Wounds</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Detect Evil</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<script>
+function contrastFunction() {
+    var x = document.getElementById("paragraph1");
+    var y = document.getElementById("heading1");
+    var z = document.getElementById("paragraph2");
+    var a = document.getElementById("paragraph3");
+    var b = document.getElementById("heading2");
+    x.style.fontSize = "25px"; 
+    x.style.color = "white"; 
+    y.style.fontSize = "50px";
+    y.style.color = "white";
+    z.style.fontSize = "25px"; 
+    z.style.color = "white"; 
+    a.style.fontSize = "25px"; 
+    a.style.color = "white";
+    b.style.fontSize = "25px"; 
+    b.style.color = "white";
+    document.body.style.backgroundColor = "black";
+}
+function myFunction() {
+    var a = document.getElementById("paragraph1");
+    var b = document.getElementById("heading1");
+    var c = document.getElementById("paragraph2");
+    var d = document.getElementById("paragraph3");
+    var e = document.getElementById("heading2");
+    a.style.fontSize = "16px"; 
+    a.style.color = "black"; 
+    b.style.fontSize = "32px";
+    b.style.color = "black";
+    c.style.fontSize = "16px"; 
+    c.style.color = "black"; 
+    d.style.fontSize = "16px"; 
+    d.style.color = "black";
+    e.style.fontSize = "16px"; 
+    e.style.color = "black";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nate Viens</title>
+<style>
+body {
+    background-image: url("Mom and Dad.jpg");
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: 31%;
+	background-color: lightBlue;
+	border-left: 10px solid Darkblue;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+h1 {
+	text-align: center;
+    font-family: garamond;
+}
+p { 
+	font-family: verdana;
+    font-size: 16px
+}
+h3 {
+	font-family: verdana;
+    font-size: 16px;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background color: darkgrey;
+}
+ul.a {
+	float: right;
+}
+li {
+	float: left;
+	border-right: 2px solid white;
+	background-color: grey;
+}
+li a, .dropbtn {
+	display: inline-block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(.active), .dropdown:hover .dropbtn  {
+	background-color: dodgerBlue;
+}
+.active {
+	background-color: dodgerBlue;
+}	
+button {
+	float: right;
+}
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: green}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+<ul>
+	<li><a href="home.html">Home</a></li>
+	<li><a class="active"href="blog.html">My Family</a></li>
+	<li><a href="future.html">The Future</a></li>
+	<li><a href="dnd.html">D&D</a></li>
+	<li><a  href="Delt.html">ΔΤΔ</a></li>
+	<li class="dropdown"> <a href="javascript:void(0)" class="dropbtn">Contact</a>
+    <div class="dropdown-content">
+      <a href=https://www.linkedin.com/in/nathaniel-viens>LinkedIn</a>
+      <address><a href="mailto:nathaniel.viens@maine.edu">nathaniel.viens@maine.edu</a></address>
+      <a href="tel:207-462-6283">(207)462-6283</a>
+    </div>
+  </li>
+</ul>
+<br>
+	<button onclick="myFunction()">Change Contrast back</button>
+	<button onclick="contrastFunction()">Change Contrast</button>
+	
+
+<h1 id="heading1">Meet My Family</h1>
+
+<p id="paragraph1">I was raised in Augusta by my parents, Debbie and Brian Viens. My mother is a kindergarden teacher and my father works in the greenhouse
+department of Lowe's. They embody what I would like to see for my life. They both love what they do, and they love coming home to talk about their day.
+<br><br>
+<br>Something that my father onece told me,<b>"If you love what you do Nate, you will never work a day in your life."</b> 
+<br><br>
+<br>This being said, there is something more important to what he said. My father has a trio of disorders, Retinitis Pigmentosa, Ushers Syndrome, and Cerebellar Ataxia. 
+These syndrones have made him legally blind, allowing him to only see out of the equivalent of a pin hole, hard of hearing and also with muscle and coordination issues. However, this has not stopped him. </p>
+
+<p id="paragraph2">My brother, Dand and his wife Larissa live in Augusta as well with their two children, Riley and Calvin. I have looked up to them for as long as I can remember. 
+Dan, being six years older than myself, has had opportunities that I always wished I had, but I have been too young. Figuring out that we both look up to each other was hard for us, but was very enlightening. 
+I don't get to see them as often as I should, as being in school and working full time to pay for it, my girlfriend and I try to get down to Augusta as often as we can.</p>
+
+<p id="paragraph3">My best friends have always been there for me. Colin, Anna and Beal still remain my best friends from High School. Being so close, I have been able to see Colin and Anna
+a lot more often. I miss Matt Beal who was always the clown and goofball in the group. </p>
+
+<div class="responsive">
+
+  <div class="img">
+    <a target="_blank" href="Dan and Larissa.jpg">
+      <img src="Dan and Larissa.jpg" alt="Dan and Larissa" width="300" height="200">
+    </a>
+    <div class="desc">Dan and Larissa</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="Riley and Calvin.jpg">
+      <img src="Riley and Calvin.jpg" alt="img" width="600" height="400">
+    </a>
+    <div class="desc">My niece and nephew, Riley and Calvin</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="Colin and Anna.jpg">
+      <img src="Colin and Anna.jpg" alt="img" width="600" height="400">
+    </a>
+    <div class="desc">Our best friends, Colin and Anna</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <a target="_blank" href="Beal.jpg">
+      <img src="Beal.jpg" alt="Beal" width="600" height="400">
+    </a>
+    <div class="desc">Another best friend, Matt Beal</div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<h3 id="heading2"></h4>
+
+<script>
+function contrastFunction() {
+    var x = document.getElementById("paragraph1");
+    var y = document.getElementById("heading1");
+    var z = document.getElementById("paragraph2");
+    var a = document.getElementById("paragraph3");
+    var b = document.getElementById("heading2");
+    x.style.fontSize = "25px"; 
+    x.style.color = "white"; 
+    y.style.fontSize = "50px";
+    y.style.color = "white";
+    z.style.fontSize = "25px"; 
+    z.style.color = "white"; 
+    a.style.fontSize = "25px"; 
+    a.style.color = "white";
+    b.style.fontSize = "25px"; 
+    b.style.color = "white";
+    document.body.style.backgroundColor = "black";
+}
+function myFunction() {
+    var a = document.getElementById("paragraph1");
+    var b = document.getElementById("heading1");
+    var c = document.getElementById("paragraph2");
+    var d = document.getElementById("paragraph3");
+    var e = document.getElementById("heading2");
+    a.style.fontSize = "16px"; 
+    a.style.color = "black"; 
+    b.style.fontSize = "32px";
+    b.style.color = "black";
+    c.style.fontSize = "16px"; 
+    c.style.color = "black"; 
+    d.style.fontSize = "16px"; 
+    d.style.color = "black";
+    e.style.fontSize = "16px"; 
+    e.style.color = "black";
+    document.body.style.backgroundColor = "lightBlue";
+}
+</script>
+
+
+</body>
+</html>
